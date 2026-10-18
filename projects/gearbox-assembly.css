@@ -1,0 +1,35 @@
+/* Gearbox page only; retain shared palette, typography and image frames. */
+.gearbox-case .gearbox-hero { width: 100%; max-width: 760px; margin: 32px auto 40px; }
+.gearbox-case .gearbox-media-link { display: block; width: 100%; aspect-ratio: var(--media-ratio, 4/3); }
+.gearbox-case .gearbox-hero .gearbox-media-link { aspect-ratio: auto; }
+.gearbox-case .gearbox-hero img { height: auto; }
+.gearbox-case .gearbox-hero figcaption { margin-top: 12px; }
+.gearbox-case .gearbox-work, .gearbox-case .gearbox-final { padding-top: 32px; border-top: 1px solid var(--section-line); }
+.gearbox-case .gearbox-work .section-header, .gearbox-case .gearbox-final .section-header { margin-bottom: 24px; }
+.gearbox-case .gearbox-featured { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px; width: 100%; max-width: 960px; margin: 0 auto 36px; align-items: start; }
+.gearbox-case .gearbox-item--bom { width: 100%; max-width: 340px; justify-self: center; }
+.gearbox-case .gearbox-item--bom .gearbox-media-link { aspect-ratio: 1234/1598; }
+.gearbox-case .gearbox-components-heading { max-width: 1080px; margin: 40px auto 24px; padding-top: 24px; border-top: 1px solid var(--section-line); }
+.gearbox-case .gearbox-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 28px 24px; width: 100%; max-width: 1080px; margin-inline: auto; }
+.gearbox-case .gearbox-item { min-width: 0; }
+.gearbox-case .gearbox-item figcaption { margin-top: 12px; }
+.gearbox-case .gearbox-item .entry-title { margin-bottom: 6px; }
+.gearbox-case .gearbox-final { margin-top: 40px; }
+.gearbox-case .gearbox-final-photo { width: 100%; max-width: 420px; margin-inline: auto; }
+.gearbox-case .gearbox-final-photo .gearbox-media-link { aspect-ratio: 3/4; }
+.gearbox-case .gearbox-final-photo figcaption { margin-top: 12px; }
+/* Half-card tracks center the final three without stretching or placeholders. */
+@media (min-width: 1001px) {
+  .gearbox-case .gearbox-grid > .gearbox-item { grid-column: span 2; }
+  .gearbox-case .gearbox-grid > .gearbox-item:nth-child(5) { grid-column: 2 / span 2; }
+}
+@media (max-width: 1000px) {
+  .gearbox-case .gearbox-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 721px) and (max-width: 1000px) {
+  .gearbox-case .gearbox-grid > .gearbox-item:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc((100% - 24px) / 2); justify-self: center; }
+}
+@media (max-width: 720px) {
+  .gearbox-case .gearbox-grid { grid-template-columns: minmax(0, 1fr); max-width: 480px; }
+  .gearbox-case .gearbox-featured { grid-template-columns: minmax(0, 1fr); max-width: 480px; gap: 28px; }
+}

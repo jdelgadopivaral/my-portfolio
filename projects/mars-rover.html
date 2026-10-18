@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="In-progress mechanical design of HURC’s rover drilling, depth-based sample separation, and removable cache system by Juan Carlos Delgado-Pivaral.">
+<title>Mars Rover Sample Cache System — HURC | Juan Carlos Delgado-Pivaral</title>  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="mars-rover.css">
+</head>
+<body class="case-page rover-case">
+<a class="skip-link" href="#top">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="../index.html" aria-label="Juan Carlos Delgado-Pivaral home">JCD<span>/</span>
+</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="../index.html#projects-work">Projects &amp; Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <a class="header-resume" href="../Resume%20-%20Juan%20DelgadoPivaral.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span>
+</a>
+  </header>
+<main id="top" class="case-main page-width">
+<a class="case-back" href="../index.html#projects-work">← Back to Projects &amp; Work</a>
+<p class="eyebrow">Mechanical Design · In Progress</p>
+<h1>Mars Rover Sample Cache System — HURC</h1>
+<p class="case-dek">Developing a simplified drilling, sample-separation, and cache system for HURC’s University Rover Challenge rover while working with the science team to translate sampling requirements into a practical mechanical design.</p>
+
+<section class="rover-goal rover-prose" aria-labelledby="project-goal-title">
+  <h2 class="subheading" id="project-goal-title">Project Goal</h2>
+  <p>As one of the mechanical engineering leads supporting HURC’s science team, I am helping develop the rover system used to collect and store soil samples. The system must collect the science sample from the first 10 cm of soil, collect a separate sample from deeper material, and retain approximately 5 g in a removable cache.</p>
+</section>
+
+<section class="rover-chapter" aria-labelledby="previous-design-title">
+  <header class="section-header"><h2 class="section-title" id="previous-design-title">Simplifying the Previous Design</h2></header>
+  <div class="rover-previous">
+    <figure class="rover-media">
+      <button type="button" class="project-image-trigger media-frame rover-media-link media--photo media--uncropped" data-full-src="../images/HURC%20Pictures/Previous%20Design.jpg" aria-label="Open full-size image: Previous sampling system">
+        <img src="../images/HURC%20Pictures/Previous%20Design.jpg" alt="Previous sampling mechanism mounted within the rover structure" width="1200" height="1600" decoding="async">
+      </button>
+      <figcaption class="metadata">Previous Design · Last year’s sampling mechanism.</figcaption>
+    </figure>
+    <div class="rover-prose">
+      <p>I was tasked with simplifying the previous sampling system to reduce unnecessary mechanical complexity and make the design easier to build, integrate, and operate.</p>
+      <p>The current design focuses on accomplishing the required sampling tasks with fewer moving components and a clearer material path.</p>
+    </div>
+  </div>
+</section>
+
+<section class="rover-chapter" aria-labelledby="auger-title">
+  <header class="section-header"><h2 class="section-title" id="auger-title">Current System Design</h2></header>
+  <div class="rover-prose">
+    <p>The current design uses an auger to collect soil and move material upward through the drilling system. The mechanism extends downward to reach the required sampling depth while keeping the overall assembly compact enough for rover integration.</p>
+    <p>The same drilling system is intended to support both the shallow science sample and the deeper cache sample.</p>
+  </div>
+  <div class="rover-media-grid">
+    <figure class="rover-media">
+      <button type="button" class="project-image-trigger media-frame rover-media-link media--cad" data-full-src="../images/HURC%20Pictures/Auger.png" aria-label="Open full-size CAD image: Auger assembly">
+        <img src="../images/HURC%20Pictures/Auger.png" alt="Current auger assembly CAD concept" width="1166" height="1218" loading="lazy" decoding="async">
+      </button>
+      <figcaption class="metadata">Auger Assembly</figcaption>
+    </figure>
+    <figure class="rover-media">
+      <button type="button" class="project-image-trigger media-frame rover-media-link media--cad" data-full-src="../images/HURC%20Pictures/Auger%20Extended.png" aria-label="Open full-size CAD image: Auger extended position">
+        <img src="../images/HURC%20Pictures/Auger%20Extended.png" alt="Auger CAD concept in the extended position for deeper drilling" width="1478" height="1456" loading="lazy" decoding="async">
+      </button>
+      <figcaption class="metadata">Extended Drilling Position</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="rover-chapter" aria-labelledby="separation-title">
+  <header class="section-header"><h2 class="section-title" id="separation-title">Sample Separation &amp; Cache</h2></header>
+  <div class="rover-prose">
+    <p>The system must keep samples from different depths separated. In the current concept, material from the first 10 cm is used as the science sample; once the auger reaches deeper material, a funnel-style ramp redirects it toward the cache.</p>
+    <p>The cache is designed to hold approximately 5 g. After collection, a servo-driven closure is intended to shut the cache and retain the material. The cache will also be removable so the stored sample can be retrieved after the rover task.</p>
+  </div>
+  <div class="rover-media-grid rover-media-grid--cache">
+    <figure class="rover-media">
+      <button type="button" class="project-image-trigger media-frame rover-media-link media--cad" data-full-src="../images/HURC%20Pictures/Cache.png" aria-label="Open full-size CAD image: Cache and sample-routing configuration">
+        <img src="../images/HURC%20Pictures/Cache.png" alt="Current cache CAD concept with the funnel and sample-routing structure" width="1934" height="1588" loading="lazy" decoding="async">
+      </button>
+      <figcaption class="metadata">Sample-routing configuration</figcaption>
+    </figure>
+    <figure class="rover-media">
+      <button type="button" class="project-image-trigger media-frame rover-media-link media--cad" data-full-src="../images/HURC%20Pictures/Cache%20with%20funnel%20flipped.png" aria-label="Open full-size CAD image: Cache with funnel flipped">
+        <img src="../images/HURC%20Pictures/Cache%20with%20funnel%20flipped.png" alt="Current cache CAD concept with the funnel flipped to its alternate position" width="2124" height="1656" loading="lazy" decoding="async">
+      </button>
+      <figcaption class="metadata">Funnel/ramp in alternate position</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="rover-chapter" aria-labelledby="status-title">
+  <header class="section-header"><h2 class="section-title" id="status-title">Current Status</h2></header>
+  <p class="rover-prose">The current CAD establishes the simplified auger, sample-routing, and servo-closed cache concepts. I am currently testing and refining the geometry while working with the science team and waiting for approval of the current design direction before moving into physical prototyping and rover integration.</p>
+</section>
+</main>
+<footer class="footer page-width">
+<span>© 2026 Juan Carlos Delgado-Pivaral</span>
+<a href="../index.html#contact">Contact</a>
+<a href="../index.html#projects-work">Projects &amp; Work</a>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>

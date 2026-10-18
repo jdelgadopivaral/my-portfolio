@@ -1,0 +1,78 @@
+/* Scoped to Battle Robot; use the shared typography, palette and image frames. */
+.robot-case .robot-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--column-gap);
+  margin-block: 32px 48px;
+}
+.robot-case .robot-summary { display: grid; gap: 24px; min-width: 0; }
+.robot-case .robot-summary .subheading { margin-bottom: 10px; }
+.robot-case .robot-chapter {
+  padding-block: 48px;
+  border-top: 1px solid var(--section-line);
+}
+.robot-case .robot-chapter:last-child { padding-bottom: 0; }
+.robot-case .robot-chapter .section-header { margin-bottom: 20px; }
+.robot-case .robot-prose { max-width: 800px; }
+.robot-case .robot-prose p + p { margin-top: 16px; }
+.robot-case .robot-tools { margin-top: 16px; }
+.robot-case .robot-result { margin-top: 24px; }
+.robot-case .robot-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 24px;
+  margin-inline: auto;
+  align-items: start;
+}
+.robot-case .robot-media-grid--design { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.robot-case .robot-media-grid--manufacturing { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.robot-case .robot-media-grid--final-cad { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.robot-case .robot-media { min-width: 0; width: 100%; margin-inline: auto; }
+.robot-case .robot-media--primary { grid-column: 1 / -1; max-width: 760px; }
+.robot-case .robot-video-placeholder { width: 100%; aspect-ratio: 16/9; }
+.robot-case .robot-media-link { display: block; width: 100%; aspect-ratio: var(--media-ratio, 4/3); }
+.robot-case .robot-media-link:focus-visible { outline-offset: 4px; }
+.robot-case .robot-media--hero { width: 100%; max-width: 420px; }
+.robot-case .robot-media--hero .robot-media-link { aspect-ratio: 3/4; }
+.robot-case .robot-media--natural .robot-media-link { aspect-ratio: auto; }
+.robot-case .robot-media--natural .robot-media-link > img { height: auto; }
+.robot-case .robot-media-grid--final-cad > :not(.robot-media--primary) .robot-media-link { aspect-ratio: 6/5; }
+.robot-case .robot-media--prototype .robot-media-link { aspect-ratio: 3/4; }
+.robot-case .robot-media-grid--drivetrain .robot-media-link { aspect-ratio: 1; }
+.robot-case .robot-media--prototype img { object-position: center 60%; }
+.robot-case .robot-media--gearbox img { object-position: center 34%; }
+.robot-case .robot-media--casting img { object-position: center 45%; }
+.robot-case .robot-media--competition img { object-position: center 53%; }
+.robot-case .robot-media--ramp-test img { object-position: center 65%; }
+.robot-case .robot-media--mounting img { object-position: center 60%; }
+.robot-case .robot-media figcaption { margin-top: 10px; }
+.robot-case .robot-media-grid:has(> .robot-media:only-child) { grid-template-columns: minmax(0, 1fr); max-width: 480px; }
+.robot-case .robot-assembly:has(> figure[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.robot-case .robot-assembly {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+  align-items: start;
+  gap: var(--column-gap);
+}
+.robot-case .robot-assembly > .robot-media { max-width: 480px; }
+@media (max-width: 1000px) {
+  .robot-case .robot-intro { grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); }
+  .robot-case .robot-media-grid--manufacturing { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .robot-case .robot-intro,
+  .robot-case .robot-assembly { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 800px) {
+  .robot-case .robot-media-grid { grid-template-columns: minmax(0, 1fr); max-width: 480px; }
+}
+@media (max-width: 720px) {
+  .robot-case .robot-intro { grid-template-columns: minmax(0, 1fr); gap: 28px; margin-bottom: 36px; }
+  .robot-case .robot-chapter { padding-block: 36px; }
+  .robot-case .robot-media-grid,
+  .robot-case .robot-assembly { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}

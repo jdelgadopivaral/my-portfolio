@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Battle Robot: mechanical design, manufacturing, assembly, and testing for Harvard Engineering Sciences 51. An engineering case study by Juan Carlos Delgado-Pivaral.">
+  <title>Battle Robot — Juan Carlos Delgado-Pivaral</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="battle-robot.css">
+</head>
+<body class="case-page robot-case">
+  <a class="skip-link" href="#top">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="../index.html" aria-label="Juan Carlos Delgado-Pivaral home">JCD<span>/</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="../index.html#projects-work">Projects &amp; Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <a class="header-resume" href="../Resume%20-%20Juan%20DelgadoPivaral.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top" class="case-main page-width">
+    <a class="case-back" href="../index.html#projects-work">← Back to Projects &amp; Work</a>
+    <p class="eyebrow">Mechanical Design &amp; Manufacturing · Completed</p>
+    <h1>Battle Robot</h1>
+    <p class="case-dek">Designed and manufactured a competition robot through CAD, analysis, machining, fabrication, assembly, and iterative testing for Harvard Engineering Sciences 51.</p>
+
+    <div class="robot-intro">
+      <figure class="robot-media robot-media--hero">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Finished%20Robot.jpeg" aria-label="Open full-size image: Completed Battle Robot with blue chassis, drive wheels, arm and claw">
+            <img src="../images/Images%20for%20LeBot/web/finished-robot.jpg" alt="Completed Battle Robot with blue chassis, drive wheels, arm and claw" width="1350" height="1800" fetchpriority="high" decoding="async">
+          </button>
+        </figure>
+      <div class="robot-summary">
+        <section aria-labelledby="robot-summary-0">
+          <h2 class="subheading" id="robot-summary-0">Goal</h2>
+          <p>The goal was to design and build a remote-controlled robot for the ES51 Turf Wars competition. The robot had to fit inside an 11 in × 11 in × 11 in starting box, climb 15° and 30° ramps, collect irregular objects, and score them into elevated goals during four-minute matches.</p>
+        </section>
+        <section aria-labelledby="robot-summary-1">
+          <h2 class="subheading" id="robot-summary-1">My Contribution</h2>
+          <p>I contributed throughout the robot’s design and build process, including concept development, CAD, manufacturing, assembly, and system integration. I helped develop the drivetrain, gearbox, wheels, arm, and structural components and assembled most of the final robot as the individual systems came together.</p>
+        </section>
+        <section aria-labelledby="robot-summary-2">
+          <h2 class="subheading" id="robot-summary-2">Result</h2>
+          <p>The finished robot successfully climbed the 30° ramp, reliably scored in the 7-inch and 14-inch tiers, and finished 1st out of 6 teams in the Harvard Engineering Sciences 51 final competition.</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Keep the overview concise; add future media within these existing sections.
+         Technical images remain uncropped. All image links open the original files. -->
+    <section class="robot-chapter" id="overview" aria-labelledby="overview-title">
+      <header class="section-header">
+        <h2 class="section-title" id="overview-title">Overview</h2>
+      </header>
+      <p class="robot-prose">LeBot James was a compact four-wheel robot built around a two-bar arm and claw mechanism. The final design balanced simplicity, reliability, manufacturability, and scoring performance while staying within the competition’s size and manufacturing constraints.</p>
+      <p class="metadata robot-tools">SolidWorks · Machining · Laser Cutting · 3D Printing · Casting · Assembly</p>
+    </section>
+
+    <section class="robot-chapter" id="design-process" aria-labelledby="design-process-title">
+      <header class="section-header">
+        <h2 class="section-title" id="design-process-title">Design Process</h2>
+      </header>
+      <p class="robot-prose">We explored several drivetrain and arm concepts before simplifying the design into a four-wheel robot with a two-bar arm. Early sketches, physical prototypes, and CAD helped us refine the overall geometry before committing to the final assembly.</p>
+      <div class="robot-media-grid robot-media-grid--design">
+        <figure class="robot-media robot-media--technical">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--cad media--natural" data-full-src="../images/Images%20for%20LeBot/Sketching.png" aria-label="Open full-size image: Early sketches comparing drivetrain and arm concepts">
+            <img src="../images/Images%20for%20LeBot/Sketching.png" alt="Early sketches comparing drivetrain and arm concepts" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Early concept sketches.</figcaption>
+        </figure>
+        <figure class="robot-media robot-media--photo robot-media--prototype">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Initial%20Model.jpeg" aria-label="Open full-size image: Initial cardboard robot model with wheels, an arm and a claw">
+            <img src="../images/Images%20for%20LeBot/web/initial-model.jpg" alt="Initial cardboard robot model with wheels, an arm and a claw" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Initial physical prototype.</figcaption>
+        </figure>
+        <figure class="robot-media robot-media--technical">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--cad media--natural" data-full-src="../images/Images%20for%20LeBot/Initial%20CAD.png" aria-label="Open full-size image: Early SolidWorks assembly of the robot">
+            <img src="../images/Images%20for%20LeBot/Initial%20CAD.png" alt="Early SolidWorks assembly of the robot" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Early SolidWorks model.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="robot-chapter" id="final-cad" aria-labelledby="final-cad-title">
+      <header class="section-header">
+        <h2 class="section-title" id="final-cad-title">Final CAD</h2>
+      </header>
+      <p class="robot-prose">After the overall concept was finalized, we developed the robot as a complete SolidWorks assembly and refined the individual subsystems around the competition constraints. The final CAD helped us verify packaging, arm reach, drivetrain layout, gearbox placement, and how the individual components would fit together before manufacturing.</p>
+      <div class="robot-media-grid robot-media-grid--final-cad">
+        <figure class="robot-media robot-media--technical robot-media--natural robot-media--primary">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--cad media--natural" data-full-src="../images/Images%20for%20LeBot/LeBot%20James%20-%20Extended%20Arm.png" aria-label="Open full-size image: Final CAD with the arm extended">
+            <img src="../images/Images%20for%20LeBot/LeBot%20James%20-%20Extended%20Arm.png" alt="Final SolidWorks assembly with the arm extended" width="1766" height="1270" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Extended-arm scoring configuration.</figcaption>
+        </figure>
+        <figure class="robot-media robot-media--technical">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--cad" data-full-src="../images/Images%20for%20LeBot/LeBot%20James%20-%20Under%20View.png" aria-label="Open full-size image: Underside CAD view of the drivetrain">
+            <img src="../images/Images%20for%20LeBot/LeBot%20James%20-%20Under%20View.png" alt="Underside CAD view showing the drivetrain, motors and gearbox placement" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Drivetrain and gearbox packaging.</figcaption>
+        </figure>
+        <figure class="robot-media robot-media--technical">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--cad" data-full-src="../images/Images%20for%20LeBot/Exploded%20View.png" aria-label="Open full-size image: Exploded SolidWorks assembly of the final robot">
+            <img src="../images/Images%20for%20LeBot/Exploded%20View.png" alt="Exploded SolidWorks assembly showing the drivetrain, arm, claw and structural components" width="867" height="712" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Exploded view of the final robot assembly.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="robot-chapter" id="engineering-analysis" aria-labelledby="engineering-analysis-title">
+      <header class="section-header">
+        <h2 class="section-title" id="engineering-analysis-title">Engineering Analysis</h2>
+      </header>
+      <div class="robot-assembly">
+        <div class="robot-prose">
+          <p>Before manufacturing the final parts, we used engineering analysis to check whether the design could handle the expected competition loads. We evaluated drivetrain performance, arm loading, reach, stability, and structural strength.</p>
+          <p>One of the checks included a SolidWorks Simulation of the acrylic arm support under the expected lifting load. The analysis showed that the stress remained well below the material’s yield strength and that the arm experienced only a small amount of deflection.</p>
+        </div>
+        <figure class="robot-media robot-media--technical robot-media--natural">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--cad media--natural" data-full-src="../images/Images%20for%20LeBot/Beam%20Bending%20Analysis.png" aria-label="Open full-size image: SolidWorks bending stress analysis">
+            <img src="../images/Images%20for%20LeBot/Beam%20Bending%20Analysis.png" alt="SolidWorks stress simulation of the acrylic arm support with stress scale and yield strength reference" width="1075" height="550" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Bending stress check under the expected lifting load.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="robot-chapter" id="manufacturing" aria-labelledby="manufacturing-title">
+      <header class="section-header">
+        <h2 class="section-title" id="manufacturing-title">Manufacturing</h2>
+      </header>
+      <p class="robot-prose">The final robot combined several manufacturing processes, including laser-cut acrylic structures, 3D-printed claw components, machined shafts and supports, and Ecoflex cast wheels.</p>
+      <div class="robot-media-grid robot-media-grid--manufacturing">
+        <figure class="robot-media robot-media--photo">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Laser%20Cutting.jpeg" aria-label="Open full-size image: Laser-cut acrylic structural parts laid out before assembly">
+            <img src="../images/Images%20for%20LeBot/web/laser-cutting.jpg" alt="Laser-cut acrylic structural parts laid out before assembly" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Laser Cutting</figcaption>
+        </figure>
+        <figure class="robot-media robot-media--photo">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/3D%20Printing%20Arms.JPG" aria-label="Open full-size image: Claw components being produced on a 3D printer">
+            <img src="../images/Images%20for%20LeBot/web/claw-printing.jpg" alt="Claw components being produced on a 3D printer" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">3D Printing</figcaption>
+        </figure>
+        <figure class="robot-media robot-media--photo robot-media--casting">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Wheel%20Casting.jpeg" aria-label="Open full-size image: Ecoflex silicone wheel casting in the custom blue mold">
+            <img src="../images/Images%20for%20LeBot/web/wheel-casting.jpg" alt="Ecoflex silicone wheel casting in the custom blue mold" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Wheel Casting</figcaption>
+        </figure>
+        <figure class="robot-media robot-media--photo robot-media--gearbox">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Gearbox%20Assembly.jpeg" aria-label="Open full-size image: Motor and gearbox assembly with shafts and custom support hardware">
+            <img src="../images/Images%20for%20LeBot/web/gearbox-assembly.jpg" alt="Motor and gearbox assembly with shafts and custom support hardware" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Machining</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="robot-chapter" id="drivetrain-testing" aria-labelledby="drivetrain-testing-title">
+      <header class="section-header">
+        <h2 class="section-title" id="drivetrain-testing-title">Drivetrain Testing</h2>
+      </header>
+      <section aria-labelledby="cardboard-drivetrain-title">
+        <header class="section-header">
+          <h3 class="subheading" id="cardboard-drivetrain-title">Cardboard Drivetrain Mockup</h3>
+        </header>
+        <p class="robot-prose">Before manufacturing the final chassis, we built a cardboard drivetrain mockup with the drivetrain and gearbox components mounted in place. This gave us a quick way to evaluate the basic layout, motor and gearbox placement, wheel spacing, and overall drivetrain behavior before committing to the acrylic structure.</p>
+        <div class="robot-media-grid robot-media-grid--drivetrain">
+          <figure class="robot-media robot-media--photo robot-media--ramp-test">
+            <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/EngSci%2051%20-%20Cardboard%20Drivetrain%20Demo.jpeg" aria-label="Open full-size image: Cardboard drivetrain mockup during ramp testing">
+              <img src="../images/Images%20for%20LeBot/web/cardboard-drivetrain.jpg" alt="Cardboard drivetrain mockup with wheels and drivetrain components mounted, testing on a turf-covered ramp" loading="lazy" decoding="async">
+            </button>
+            <figcaption class="metadata">Cardboard Drivetrain Mockup</figcaption>
+          </figure>
+          <figure class="robot-media robot-media--photo robot-media--mounting">
+            <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/EngSci%2051%20-%20Gearbox%20Mounting%202.jpeg" aria-label="Open full-size image: Gearbox and motor mounting in the cardboard drivetrain mockup">
+              <img src="../images/Images%20for%20LeBot/web/gearbox-mounting.jpg" alt="Underside of the cardboard drivetrain mockup showing the mounted motors, gearboxes, shafts and wheels" loading="lazy" decoding="async">
+            </button>
+            <figcaption class="metadata">Gearbox and motor mounting in the cardboard mockup.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="robot-result" aria-labelledby="acrylic-drivetrain-title">
+        <header class="section-header">
+          <h3 class="subheading" id="acrylic-drivetrain-title">Final Acrylic Drivetrain</h3>
+        </header>
+        <div class="robot-assembly">
+          <p class="robot-prose">After the final drivetrain components were manufactured, we assembled the acrylic drivetrain as a complete subsystem and tested the actual geometry, wheel alignment, gearbox mounting, and drivetrain operation before integrating the rest of the robot.</p>
+          <figure class="robot-media" hidden>
+            <!-- Replace the placeholder span with a video using controls,
+                 playsinline and preload="metadata" once the demo file is added. -->
+            <div class="media-frame placeholder-media robot-video-placeholder" hidden>
+              <span>Drivetrain demo video coming soon</span>
+            </div>
+            <figcaption class="metadata">Final Acrylic Drivetrain</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+
+    <section class="robot-chapter" id="assembly-integration" aria-labelledby="assembly-integration-title">
+      <header class="section-header">
+        <h2 class="section-title" id="assembly-integration-title">Assembly &amp; Integration</h2>
+      </header>
+      <div class="robot-assembly">
+        <p class="robot-prose">Once the drivetrain had been tested and the remaining components were manufactured, we began integrating the full robot. I assembled most of the final system and worked through fit-up, alignment, hardware, and integration issues between the drivetrain, gearbox, arm, claw, and structure.</p>
+        <figure class="robot-media robot-media--photo">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Juan%20Assembling.JPG" aria-label="Open full-size image: Juan working on the robot’s drivetrain at the shop workbench">
+            <img src="../images/Images%20for%20LeBot/web/juan-assembling.jpg" alt="Juan working on the robot’s drivetrain at the shop workbench" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Drivetrain assembly and fit-up in the shop.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="robot-chapter" id="competition-result" aria-labelledby="competition-result-title">
+      <header class="section-header">
+        <h2 class="section-title" id="competition-result-title">Competition / Result</h2>
+      </header>
+      <p class="robot-prose">The final robot successfully climbed the 15° and 30° ramps, handled multiple competition objects, and reliably scored in the 7-inch and 14-inch tiers.</p>
+      <div class="robot-media-grid robot-media-grid--testing">
+        <figure class="robot-media robot-media--photo robot-media--competition">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Competition.jpeg" aria-label="Open full-size image: Blue Battle Robot on the turf competition field beside a ramp and scoring tiers">
+            <img src="../images/Images%20for%20LeBot/web/competition.jpg" alt="Blue Battle Robot on the turf competition field beside a ramp and scoring tiers" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">The finished robot on the ES51 Turf Wars field.</figcaption>
+        </figure>
+        <!-- Keep the winning team as the final image on this page. -->
+        <figure class="robot-media robot-media--photo">
+          <button type="button" class="project-image-trigger media-frame robot-media-link media--photo" data-full-src="../images/Images%20for%20LeBot/Winning%20Team.jpeg" aria-label="Open full-size image: Team 2 with the completed robot and first-place medals">
+            <img src="../images/Images%20for%20LeBot/web/winning-team.jpg" alt="Team 2 with the completed robot and first-place medals" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="metadata">Team 2 after finishing 1st in the Harvard Engineering Sciences 51 final competition.</figcaption>
+        </figure>
+      </div>
+      <p class="robot-prose robot-result">Our team finished 1st out of 6 teams in the Harvard Engineering Sciences 51 final competition.</p>
+    </section>
+
+    <section class="robot-chapter" id="what-i-learned" aria-labelledby="what-i-learned-title">
+      <header class="section-header">
+        <h2 class="section-title" id="what-i-learned-title">What I Learned</h2>
+      </header>
+      <div class="robot-prose">
+        <p>This project was one of my first experiences taking a mechanical system all the way from early sketches to a finished machine. The biggest takeaway for me was how much the design changes once manufacturing and assembly become real constraints. Parts that looked straightforward in CAD still needed to be machined, aligned, assembled, and tested as part of a larger system.</p>
+        <p>It also gave me much more experience with SolidWorks, machining, fabrication, mechanical assembly, and working through problems as they came up during a build.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page-width">
+    <span>© 2026 Juan Carlos Delgado-Pivaral</span>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#projects-work">Projects &amp; Work</a>
+  </footer>
+<script src="../script.js"></script>
+</body>
+</html>
