@@ -142,10 +142,13 @@ img { height: auto; }
 /* About, skills and contact use the shared, full-width section introduction. */
 .education { display: flex; flex-wrap: wrap; gap: 12px 24px; padding-top: 24px; margin-top: 28px; border-top: 1px solid var(--line); }
 .education span:first-child { color: var(--text); }
-.skills-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.skills-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
 .skills-grid .subheading { margin-bottom: 16px; }
-.contact-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px; }
-.contact-links a, .email-link { color: var(--text); text-decoration-color: var(--image-border); transition: color .18s; }
+.skills-languages { grid-column: 1 / -1; }
+.contact-intro { max-width: 760px; margin-bottom: 24px; color: var(--body); font-size: clamp(20px, 2.2vw, 24px); font-weight: 400; line-height: 1.5; letter-spacing: 0; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 16px 32px; margin-top: 16px; }
+.contact-links--emails { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0; }
+.contact-links a, .email-link { color: var(--text); font-size: clamp(18px, 2vw, 22px); line-height: 1.4; text-decoration-color: var(--image-border); transition: color .18s; }
 .email-link { overflow-wrap: anywhere; }
 .contact-links a:hover, .email-link:hover { color: var(--accent); }
 
@@ -232,7 +235,7 @@ img { height: auto; }
   .hero { grid-template-columns: minmax(0, 1fr) 30%; gap: 32px; }
   .hero h1 { font-size: clamp(38px, 5vw, 52px); }
   .project-card { grid-template-columns: minmax(0, 1fr) 320px; }
-  .skills-grid { grid-template-columns: 1fr; gap: 28px; }
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 720px) {
@@ -249,6 +252,8 @@ img { height: auto; }
   .experience-note { margin-left: 0; }
   .experience-groups { gap: 36px; }
   .gallery-grid, .case-media-grid { grid-template-columns: 1fr; gap: 32px; }
+  .skills-grid { grid-template-columns: 1fr; gap: 28px; }
+  .contact-links--emails { grid-template-columns: 1fr; }
   .case-main { padding-top: 40px; }
   .case-grid, .case-block { grid-template-columns: 1fr; gap: 16px; }
 }
