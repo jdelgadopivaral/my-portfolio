@@ -104,7 +104,7 @@ img { height: auto; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 28px; }
 .button { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; color: var(--text); text-decoration: none; font-size: var(--meta-size); font-weight: 500; border-bottom: 1px solid var(--image-border); transition: color .18s, border-color .18s; }
 .button:hover { color: var(--accent); border-color: var(--accent); }
-.hero-headshot { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 35%; }
+.hero-headshot { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center 35%; }
 
 /* All media frames share one border and radius. No double borders on their children. */
 .media-frame { position: relative; overflow: hidden; border: 1px solid var(--image-border); border-radius: var(--image-radius); background: var(--surface); }
