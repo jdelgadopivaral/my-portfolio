@@ -27,6 +27,8 @@
 }
 .rover-case .rover-media-grid--cache { max-width: 800px; }
 .rover-case .rover-media-grid--cache .rover-media-link { aspect-ratio: 5/4; }
+.rover-case .rover-media-grid--status .rover-media--status-detail { grid-column: 1 / -1; max-width: 680px; }
+.rover-case .rover-media-grid--status .rover-media--status-detail .rover-media-link { aspect-ratio: 5 / 4; }
 @media (max-width: 720px) {
   .rover-case .rover-previous { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .rover-case .rover-previous .rover-media { max-width: 320px; }

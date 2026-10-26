@@ -20,6 +20,8 @@
 .formula-case .formula-media--chassis { max-width: 300px; }
 .formula-case .formula-media-link { display: block; width: 100%; }
 .formula-case .formula-media figcaption { margin-top: 10px; }
+.formula-case .formula-media-grid--status { margin-top: 24px; align-items: start; }
+.formula-case .formula-media-grid--status .formula-media-link { aspect-ratio: 4 / 3; }
 @media (max-width: 720px) {
   .formula-case .formula-chapter { padding-block: 36px; }
   .formula-case .formula-media-grid { grid-template-columns: minmax(0, 1fr); max-width: 480px; }
